@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+       <KeyFrameSet>
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_height="25px"
+            motion:layout_constraintBottom_toTopOf="@+id/tombol"
+            android:layout_width="match_parent"
+            android:id="@+id/provinsi"
+            android:layout_marginBottom="192dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.0" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_marginRight="156dp"
+            android:layout_marginTop="244dp"
+            motion:layout_constraintRight_toRightOf="parent"
+            android:layout_width="96dp"
+            motion:layout_constraintTop_toBottomOf="@id/prov"
+            android:id="@+id/tombol" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+    </ConstraintSet>
+</MotionScene>

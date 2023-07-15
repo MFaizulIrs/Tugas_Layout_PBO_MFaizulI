@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".RelativeActivity">
+
+    <TextView
+        android:id="@+id/prov"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pilih Provinsi"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/provinsi"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:entries="@array/sample_provinsi"
+        tools:layout_editor_absoluteY="185dp" />
+
+    <Button
+        android:id="@+id/tombol"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_marginRight="159dp"
+        android:text="OK"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prov" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
